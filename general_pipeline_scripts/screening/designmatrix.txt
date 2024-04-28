@@ -1,0 +1,5 @@
+samples	baseline	plus
+1-plus	1	1
+2-plus	1	1
+1-NC	1	0
+2-NC	1	0
