@@ -1,0 +1,94 @@
+default:
+ fragFolder: /analysis/lixf/my_script/pipe4C/fragFolder/
+ normalizeFactor: 1000000
+ qualityCutoff : 0
+ trimLength : 0
+ minAmountReads : 1000
+ readsQuality : 0
+ cores : 1
+ wSize : 21
+ nTop : 2
+ alnStart : TRUE
+ mapUnique : FALSE
+ nonBlind : FALSE
+ wig : FALSE
+ bigwig : FALSE
+ cisplot : FALSE
+ genomePlot : FALSE
+ tsv : FALSE
+ bins : FALSE
+ mismatchMax : 1
+ chr_random : FALSE
+ chr_fix : FALSE
+ chrUn : FALSE
+ chrM : FALSE
+ prefix : chr
+ 
+ enzymes:
+  -
+    BamHI
+    GGATCC
+  -
+    BfaI
+    CTAG
+  -
+    Csp6I
+    GTAC
+  -
+    DpnII
+    GATC
+  -
+    EcoRI
+    GAATTC
+  -
+    HindIII
+    AAGCTT
+  -
+    MboI
+    GATC
+  -
+    NlaIII
+    CATG
+  -
+    XbaI
+    TCTAGA
+ genomes:
+  -
+    mm9
+    BSgenome.Mmusculus.UCSC.mm9
+  -
+    mm10
+    BSgenome.Mmusculus.UCSC.mm10
+  -
+    hg19
+    BSgenome.Hsapiens.UCSC.hg19
+  -
+    hg38
+    BSgenome.Hsapiens.UCSC.hg38
+  -
+    GRCh38
+    BSgenome.Hsapiens.UCSC.hg38
+  
+    
+ bowtie2:
+  -
+    mm9
+    path/to/Bowtie2Index/ (for example /mm9/Bowtie2Index/)
+  -
+    mm10
+    /LiuLab/reference/Mouse/GRCm38/bowtie2_index_for_pipe4c_mm10/
+  -
+    hg19    
+    /data2/repository/genome/hg19/Bowtie2Index/
+  -
+    GRCh38 
+    /LiuLab/reference/Human/GRCh38_primary/bowtie2_index/
+
+    
+    
+ plot:
+  maxY: 4000
+  plotView: 400000
+  xaxisUnit: 'Mb'
+  plotType: 'PDF'
+  binSize: 10000
